@@ -19,46 +19,63 @@ Dir – отображает содержимое (рис. 1).
 ## Посмотреть историю изменений:
 Команда git log main отобразила коммиты,
 git reflog - отобразила все изменения в главной ветке (рис. 2).
+
 <img src="images/2.png" alt="рис. 2" width="500">
 
 git diff – изменения по файлам, git diff HEAD~1 HEAD – отображает разницу между двумя последними коммитами (рис. 3). 
+
 <img src="images/3.png" alt="рис. 3" width="500">
 
 ## Создан конфликт:
 Команда git checkout -b odintsova-patch-conflict создала новую ветку. При создании, мы переключиились на новую ветку, для возвращения на старую использована команда git checkout main.
 Создан файл 9.txt (рис. 4) 
+
 <img src="images/4.png" alt="рис. 4" width="500">
 
 Создан коммит с новым добавленным файлом (рис. 6):
+
 <img src="images/5.png" alt="рис. 5" width="500">
+
 <img src="images/6.png" alt="рис. 6" width="500">
+
 В ветке odintsova-patch-conflict создана ветка. Видно, что в ней нет файла 9.txt (рис. 7).
+
 <img src="images/7.png" alt="рис. 7" width="500">
 
 Для создания конфликта, создана еще она версия файла 9.txt.
 Снова создан коммит (рис. 8). 
+
 <img src="images/8.png" alt="рис. 8" width="500">
 
 Создано ответвление (рис. 9): 
+
 <img src="images/9.png" alt="рис. 9" width="500">
 
 Переход в ветку main, использование команды git merge должно объединить историю изменений и создать коммит, содержащий изменения обеих веток, здесь виден созданный конфликт (рис. 10, 11): 
+
 <img src="images/10.png" alt="рис. 10" width="500">
+
 <img src="images/11.png" alt="рис. 11" width="500">
 
 Конфликт разрешен, сделан коммит, ветки слились (рис. 12): 
+
 <img src="images/12.png" alt="рис. 12" width="500">
 
-Удаление побочной ветки после слияния командой git branch -d odintsova-patch-conflict (рис. 13): <img src="images/13.png" alt="рис. 13" width="500">
+Удаление побочной ветки после слияния командой git branch -d odintsova-patch-conflict (рис. 13):
+
+<img src="images/13.png" alt="рис. 13" width="500">
 
 Создан файл 11.txt, делано два коммита с изменениями в нем (рис. 14):
+
 <img src="images/14.png" alt="рис. 14" width="500">
 
 Сделан откат коммита командой git revert HEAD (рис. 15):
+
 <img src="images/15.png" alt="рис. 15" width="500">
 
 Создана ветка для отчета командой git checkout -b odintsova-patch-report
 Получена история операция с помощью git log --pretty=format:"%h | %ad | %an | %s" --date=short > commit-history.txt (рис. 16). 
+
 <img src="images/16.png" alt="рис. 16" width="500">
 
 Загружена ветка main командой git push origin main.
