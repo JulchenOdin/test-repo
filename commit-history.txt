@@ -1,0 +1,8 @@
+8988c75 | 2025-11-02 | 4441b Odintsova I.D. | Revert "commit 2"
+0f3c45b | 2025-11-02 | 4441b Odintsova I.D. | commit 2
+c98e013 | 2025-11-02 | 4441b Odintsova I.D. | commit 1
+bde7bda | 2025-11-02 | 4441b Odintsova I.D. | feat: the conflict is resolved
+049012a | 2025-11-02 | 4441b Odintsova I.D. | feat: add new 9.txt
+c57a956 | 2025-11-02 | 4441b Odintsova I.D. | feat: add 9.txt
+45adf48 | 2025-11-02 | JulchenOdin | Create file-task6
+3043473 | 2025-11-02 | JulchenOdin | Initial commit
